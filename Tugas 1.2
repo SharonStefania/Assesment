@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int hasil_ulangan;
+
+int main() {
+    printf("Masukkan hasil nilai ulangan = ");
+    scanf("%d", &hasil_ulangan);
+    printf("Hasil = %d\n", hasil_ulangan);
+    
+    if (hasil_ulangan >= 85){
+        printf("Nilai Anda Sangat Baik!");
+    }
+    else if (hasil_ulangan >= 75){
+        printf("Nilai Anda Baik!");
+    }
+    else if (hasil_ulangan >= 65){
+        printf("Nilai Anda Cukup!");
+    }
+    else {
+        printf("Nilai Anda Kurang. Silakan belajar lebih giat dan ikuti remidial!");
+    }
+    
+    return 0;
+}
